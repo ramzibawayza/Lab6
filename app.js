@@ -1,216 +1,131 @@
-
-let Seattle = {
-    MinS: 23,
-    MaxS: 65,
-    AvrS: 6.5,
-    // arrSeattle: [],
-    forEachHour: function (MinS, MaxS) {
-        var range = MaxS - MinS;
-        var rand = (Math.random() * range) + MinS;
-        var final = Math.ceil(rand);
-        return (final);
+var Hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', 
+'1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
+var seattle = {
+    Min: 23,
+    Max: 65,
+    Avarge: 6.3,
+    cookiesArray: [],
+    Ramdom: function () {
+        var range = this.Max - this.Min;
+        var rand = Math.floor(Math.random() * range) + this.Min;
+        return rand;
+    },
+    amountOfCookiesPerHourFunction: function () {
+        for (i = 0; i < 15; i++) {
+            this.amountOfCookiesCeil = Math.ceil(this.Avarge * this.Ramdom());
+            this.cookiesArray.push(this.amountOfCookiesCeil);
+        }
+        return this.cookiesArray;
     },
 
-    cookiesPurchased: function () {
-        var hours = [ ["6am: ",], 
-["7am: ",], 
-["8am: ",], 
-["8am: ",], 
-["9am: ",], 
-["10am: ",], 
-["11am: ",], 
-["12pm: ",],  
-[" 1pm: ",], 
-[" 2pm: ",], 
-["3pm: ",], 
-["4pm: ",], 
-[" 5pm: ",], 
-["6pm: ",], 
-[" 7pm: ",], 
-["Total: ",] ];
-
-        var hourSum = 0;
-        for (i = 0; i < 15; i++) {
-            var cookiesPerHour = this.forEachHour(Seattle.MinS, Seattle.MaxS) * Seattle.AvrS;
-            hours[i][1] = Math.ceil(cookiesPerHour);
-            hourSum = hourSum + hours[i][1];
-            hours[15][1] = hourSum;
-        }
-        
-        return hours;
-    }
 }
 
+seattle.amountOfCookiesPerHourFunction();
 
-let Tokyo = {
-    MinS: 3,
-    MaxS: 24,
-    AvrS: 1.2,
-    arrSeattle: [],
-    forEachHour: function (MinS, MaxS) {
-        var range = MaxS - MinS;
-        var rand = (Math.random() * range) + MinS;
-        var final = Math.ceil(rand);
-        return (final);
+var Tokyo = {
+    Min: 3,
+    Max: 24,
+    Avarge: 1.2,
+    cookiesArray: [],
+    Random: function () {
+        var range = this.Max - this.Min;
+        var rand = Math.floor(Math.random() * range) + this.Min;
+        return rand;
     },
-
-    cookiesPurchased: function () {
-        var hours = [ ["6am: ",], 
-        ["7am: ",], 
-        ["8am: ",], 
-        ["8am: ",], 
-        ["9am: ",], 
-        ["10am: ",], 
-        ["11am: ",], 
-        ["12pm: ",],  
-        [" 1pm: ",], 
-        [" 2pm: ",], 
-        ["3pm: ",], 
-        ["4pm: ",], 
-        [" 5pm: ",], 
-        ["6pm: ",], 
-        [" 7pm: ",], 
-        ["Total: ",] ];
-        var hourSum = 0;
+    amountOfCookiesPerHourFunction: function () {
         for (i = 0; i < 15; i++) {
-          
-            var cookiesPerHour = this.forEachHour(Tokyo.MinS, Tokyo.MaxS) * Tokyo.AvrS;
-            hours[i][1] = Math.ceil(cookiesPerHour);
-            hourSum = hourSum + hours[i][1];
-            hours[15][1] = hourSum;
+            this.amountOfCookiesCeil = Math.ceil(this.Avarge * this.Random());
+            this.cookiesArray.push(this.amountOfCookiesCeil);
         }
-        
-        return hours;
-    }
+        return this.cookiesArray;
+    },
 }
+Tokyo.amountOfCookiesPerHourFunction();
 
-let Dubai = {
-    MinS: 11,
-    MaxS: 38,
-    AvrS: 3.7,
-    arrSeattle: [],
-    forEachHour: function (MinS, MaxS) {
-        var range = MaxS - MinS;
-        var rand = (Math.random() * range) + MinS;
-        var final = Math.ceil(rand);
-        return (final);
+
+var Dubai = {
+    Min: 11,
+    Max: 38,
+    Avarge: 3.7,
+    cookiesArray: [],
+    Random: function () {
+        var range = this.Max - this.Min;
+        var rand = Math.floor(Math.random() * range) + this.Min;
+        return rand;
     },
-
-    cookiesPurchased: function () {
-        var hours = [ ["6am: ",], 
-        ["7am: ",], 
-        ["8am: ",], 
-        ["8am: ",], 
-        ["9am: ",], 
-        ["10am: ",], 
-        ["11am: ",], 
-        ["12pm: ",],  
-        [" 1pm: ",], 
-        [" 2pm: ",], 
-        ["3pm: ",], 
-        ["4pm: ",], 
-        [" 5pm: ",], 
-        ["6pm: ",], 
-        [" 7pm: ",], 
-        ["Total: ",] ];
-        var hourSum = 0;
+    amountOfCookiesPerHourFunction: function () {
         for (i = 0; i < 15; i++) {
-         
-
-            var cookiesPerHour = this.forEachHour(Dubai.MinS, Dubai.MaxS) * Dubai.AvrS;
-            hours[i][1] = Math.ceil(cookiesPerHour);
-            hourSum = hourSum + hours[i][1];
-            hours[15][1] = hourSum;
+            this.amountOfCookiesCeil = Math.ceil(this.Avarge * this.Random());
+            this.cookiesArray.push(this.amountOfCookiesCeil);
         }
-        
-        return hours;
-    }
+        return this.cookiesArray;
+    },
 }
+Dubai.amountOfCookiesPerHourFunction();
 
-
-let Paris = {
-    MinS: 20,
-    MaxS: 38,
-    AvrS: 2.3,
-    arrSeattle: [],
-    forEachHour: function (MinS, MaxS) {
-        var range = MaxS - MinS;
-        var rand = (Math.random() * range) + MinS;
-        var final = Math.ceil(rand);
-        return (final);
+var Paris = {
+    Min: 20,
+    Max: 38,
+    Avarge: 2.3,
+    cookiesArray: [],
+    Random: function () {
+        var range = this.Max - this.Min;
+        var rand = Math.floor(Math.random() * range) + this.Min;
+        return rand;
     },
-
-    cookiesPurchased: function () {
-        var hours = [ ["6am: ",], 
-        ["7am: ",], 
-        ["8am: ",], 
-        ["8am: ",], 
-        ["9am: ",], 
-        ["10am: ",], 
-        ["11am: ",], 
-        ["12pm: ",],  
-        [" 1pm: ",], 
-        [" 2pm: ",], 
-        ["3pm: ",], 
-        ["4pm: ",], 
-        [" 5pm: ",], 
-        ["6pm: ",], 
-        [" 7pm: ",], 
-        ["Total: ",] ];
-        var hourSum = 0;
+    amountOfCookiesPerHourFunction: function () {
         for (i = 0; i < 15; i++) {
-           
-            var cookiesPerHour = this.forEachHour(Paris.MinS, Paris.MaxS) * Paris.AvrS;
-            hours[i][1] = Math.ceil(cookiesPerHour);
-            hourSum = hourSum + hours[i][1];
-            hours[15][1] = hourSum;
+            this.amountOfCookiesCeil = Math.ceil(this.Avarge * this.Random());
+            this.cookiesArray.push(this.amountOfCookiesCeil);
         }
-        
-        return hours;
+        return this.cookiesArray;
+    },
+}
+Paris.amountOfCookiesPerHourFunction();
+
+var Lima = {
+    Min: 2,
+    Max: 16,
+    Avarge: 4.6,
+    cookiesArray: [],
+    Random: function () {
+        var range = this.Max - this.Min;
+        var rand = Math.floor(Math.random() * range) + this.Min;
+        return rand;
+    },
+    amountOfCookiesPerHourFunction: function () {
+        for (i = 0; i < 15; i++) {
+            this.amountOfCookiesCeil = Math.ceil(this.Avarge * this.Random());
+            this.cookiesArray.push(this.amountOfCookiesCeil);
+        }
+        return this.cookiesArray;
+    },
+}
+Lima.amountOfCookiesPerHourFunction();
+
+
+arrayall = ["seattle", "Tokyo", "Dubai", "Paris", "Lima"];
+arrayall1 = [seattle, Tokyo, Dubai, Paris, Lima];
+for (let j = 0; j < arrayall.length; j++) {
+    var count = 0;
+    document.write("<h2>", "* ", arrayall[j], "</h2>");
+    document.write("<ul>");
+    for (i = 0; i < 15; i++) {
+        count += arrayall1[j].cookiesArray[i];
+        document.write("<li>");
+        document.write(Hours[i], ": ", arrayall1[j].cookiesArray[i], " Cookies.");
+        document.write("<br>");
+        document.write("</li>");
     }
+    document.write("<li>", "Total : ", count, " Cookies.");
+    document.write("</ul>");
 }
 
 
 
-let Lima = {
-    MinS: 2,
-    MaxS: 16,
-    AvrS: 4.6,
-    arrSeattle: [],
-    forEachHour: function (MinS, MaxS) {
-        var range = MaxS - MinS;
-        var rand = (Math.random() * range) + MinS;
-        var final = Math.ceil(rand);
-        return (final);
-    },
 
-    cookiesPurchased: function () {
-        var hours = [ ["6am: ",], 
-        ["7am: ",], 
-        ["8am: ",], 
-        ["8am: ",], 
-        ["9am: ",], 
-        ["10am: ",], 
-        ["11am: ",], 
-        ["12pm: ",],  
-        [" 1pm: ",], 
-        [" 2pm: ",], 
-        ["3pm: ",], 
-        ["4pm: ",], 
-        [" 5pm: ",], 
-        ["6pm: ",], 
-        [" 7pm: ",], 
-        ["Total: ",] ];
-        var hourSum = 0;
-        for (i = 0; i < 15; i++) {
-         
 
-            var cookiesPerHour = this.forEachHour(Lima.MinS, Lima.MaxS) * Lima.AvrS;
-            hours[i][1] = Math.ceil(cookiesPerHour);
-            hourSum = hourSum + hours[i][1];
-            hours[15][1] = hourSum;
-        }
-        
-        return hours;
-    }
-}
+
+
+
+
