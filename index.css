@@ -1,0 +1,59 @@
+table {
+    width: 90%;
+    text-align: center;
+    padding: 8%;
+    border: brown;
+    border: outset;
+
+
+}
+td{
+    background-color: beige;
+    width: 15px;
+    margin: auto;
+    padding: 10px;
+    color: brown;
+    border: outset;
+    border-bottom-style: solid;
+    font-size: 100%;
+
+
+}
+tr{
+    background-color: beige;
+    width: 15px;
+    color: brown;
+    border: tomato;
+    border: outset;
+    font-size: 125%;
+    border: outset;
+    border-bottom-style: solid;
+
+    
+
+}
+
+#text {
+    font-size: 150px;
+    color: black;
+}
+th{
+    background-color: beige;
+    width: 15px;
+    margin: auto;
+    padding: 10px;
+    color: brown;
+    /* border: outset; */
+
+}
+.salmonTable {
+    font-size: 500%;
+}
+h1{
+    color: rgb(80, 109, 22);
+    text-align: center;
+}
+
+body{
+    background-color: beige;
+}
