@@ -1,59 +1,393 @@
-table {
-    width: 90%;
-    text-align: center;
-    padding: 8%;
-    border: brown;
-    border: outset;
-
-
-}
-td{
-    background-color: beige;
-    width: 15px;
-    margin: auto;
-    padding: 10px;
-    color: brown;
-    border: outset;
-    border-bottom-style: solid;
-    font-size: 100%;
-
-
-}
-tr{
-    background-color: beige;
-    width: 15px;
-    color: brown;
-    border: tomato;
-    border: outset;
-    font-size: 125%;
-    border: outset;
-    border-bottom-style: solid;
-
-    
-
-}
-
-#text {
-    font-size: 150px;
-    color: black;
-}
-th{
-    background-color: beige;
-    width: 15px;
-    margin: auto;
-    padding: 10px;
-    color: brown;
-    /* border: outset; */
-
-}
-.salmonTable {
-    font-size: 500%;
-}
-h1{
-    color: rgb(80, 109, 22);
-    text-align: center;
-}
-
 body{
     background-color: beige;
+  }
+  body h1{
+  text-align: center;
+  }
+  .sales-table-container{
+    text-align: center;
+  }
+  table{
+    margin:auto;
+    text-align: center;
+    width: 70%;
+    margin-top: 50px;
+  }
+  
+  td {
+    color: #4B4E75;
+    /* border : 2px solid maroon; */
+    padding: 1%;
+    font-size: 125%;
+    font-weight: bold;
+    border: outset;
+    border-bottom-color: #4B4E75;
+    border-right-color: #4b4e75;
+  }
+ 
+  .total-cookies{
+    font-size: 15px;
+    font-family: cursive;
+    text-align: center;
+    padding-bottom: 10px;
+    border: outset;
+    border-bottom-color: #4B4E75;
+    border-right-color: #4b4e75;
+    padding: 1px;
+    font-size: 100%;
+    color: #4B4E75;
+  }
+
+  th {
+    font-family: cursive;
+    padding: 1px;
+    color: #4B4E75;
+    font-size: 110%;
+    font-weight: bold;
+    border: outset;
+    border-bottom-color: #4B4E75;
+    border-right-color: #4b4e75;
+  }
+  .store-names{
+    font-family: cursive;
+    padding-bottom: 10px;
+    font-weight: normal;
+    vertical-align: bottom;
+    font-weight: bold;
+    border: outset;
+    border-bottom-color: #4B4E75;
+    border-right-color: #4b4e75;
+
 }
+
+  .total-cookies-label{
+    
+    font-family: cursive;
+    padding-bottom: 20px;
+    border: outset;
+  }
+  .hourly-sales{
+    font-family: serif;
+    vertical-align: bottom;
+    font-family: cursive;
+font-size: 100%;
+    
+  }
+  form{
+    width: 760px;
+    margin:auto;
+    margin-top:10px;
+    text-align: center;
+  }
+ 
+  button{
+  
+    margin-bottom: 2%;
+  }
+  
+  h1{
+    color:#3498db;
+    width: 100%;
+    text-align: center;
+    font-family: cursive;
+    margin-top:3%;
+    border: double;
+    border-color: #4B4E75;
+    box-sizing: border-box;
+  }
+
+  .seattle {
+      border: outset;
+  }
+ 
+  .open-hours{
+    font-family: cursive;
+    font-size: 110%;
+    font-weight: bolder;
+    padding: 10px;
+    color: #4B4E75;
+    position: relative;
+  }
+  
+  
+  button{
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: monospace;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    color: #3498db;
+    overflow: hidden;
+
+  }
+  button::before{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 0%;
+      left: 0;
+      background: #3498db;
+      transition: 0.8s;
+      z-index: -1;
+       border-radius: 50% 50% 0 0;;
+  }
+   button:hover{
+      background: #4B4E75;
+      color: #3498db;
+      border-radius: 100% 100% 100% 100%;
+      border-color:#fff;
+      border: 2px solid #3498db;
+      } 
+
+      label{
+          color: #3498db;
+          font-family: cursive;
+          font-size: 110%;
+      }
+
+      label::before{
+        transition: 0.8s;
+        z-index: -1;
+        width: 0;
+        height: 180;
+        /* border-radius: 50% 50% 50% 50%; */
+        transition: 0.8s;
+    }
+
+    label:hover{
+        /* background-color: #4B4E75; */
+        color: #4B4E75;
+        /* border-radius: 100% 100% 100% 100%; */
+        transition: 0.8s;
+        /* border: 2px solid #3498db; */
+
+    }
+  
+      fieldset {
+        display: block;
+        margin-inline-start: 2px;
+        margin-inline-end: 2px;
+        padding-block-start: 0.35em;
+        padding-inline-start: 0.75em;
+        padding-inline-end: 0.75em;
+        padding-block-end: 0.625em;
+        min-inline-size: min-content;
+        border-width: 2px;
+        border-style: groove;
+        border-color: threedface;
+        border-image: initial;
+        color: #3498db;
+        font-size: 125%;
+        font-family: cursive;
+        border: 3px solid #4B4E75;
+
+    }
+
+    input{
+        border: outset;
+        background-color: white;
+        border-bottom-color: #3498db;
+        border-right-color: #3498db;
+
+    }
+    input::before{
+        transition: 2s;
+        z-index: -1;
+        width: 0;
+        height: 180;
+        border-radius: 50% 50% 50% 50%;
+    }
+
+    input:hover{
+        background-color: #4B4E75;
+        transition: 2s;
+    }
+
+    .open-hours::before{
+        transition: 0.8s;
+        width: 0;
+        height: 180;
+        border-radius: 50% 50% 50% 50%;
+        transition: 0.8s;
+        z-index: -1;
+
+    }
+
+    .open-hours:hover{
+        background-color: #4B4E75;
+        color: #3498db;
+        border-radius: 100% 100% 100% 100%;
+        transition: 0.8s;
+
+    }
+
+    .hourly-sales::before{
+        transition: 0.8s;
+        z-index: -1;
+        width: 0;
+        height: 180;
+        border-radius: 50% 50% 50% 50%;
+        transition: 0.8s;
+    }
+
+    .hourly-sales:hover{
+        background-color: #4B4E75;
+        color: #3498db;
+        border-radius: 100% 100% 100% 100%;
+        transition: 0.8s;
+
+    }
+
+    .store-names::before {
+        transition: 0.8s;
+        z-index: -1;
+        width: 0;
+        height: 180;
+        border-radius: 50% 50% 50% 50%;
+        transition: 0.8s;
+    }
+
+    .store-names:hover{
+        background-color: #4B4E75;
+        color: #3498db;
+        border-radius: 100% 100% 100% 100%;
+        transition: 0.8s;
+
+    }
+
+    .total-cookies::before{
+        transition: 0.8s;
+        z-index: -1;
+        width: 0;
+        height: 180;
+        border-radius: 50% 50% 50% 50%;
+        transition: 0.8s;
+    }
+
+    .total-cookies:hover{
+        background-color: #4B4E75;
+        color: #3498db;
+        border-radius: 100% 100% 100% 100%;
+        transition: 0.8s;
+
+    }
+    th.hours-open::before {
+        transition: 0.8s;
+        z-index: -1;
+        width: 0;
+        height: 180;
+        border-radius: 50% 50% 50% 50%;
+        transition: 0.8s;
+    }
+    th.hours-open:hover{
+        background-color: #4B4E75;
+        color: #3498db;
+        border-radius: 100% 100% 100% 100%;
+        transition: 0.8s;
+
+    }
+
+    th#sales-by-hour::before {
+        transition: 0.8s;
+        z-index: -1;
+        width: 0;
+        height: 180;
+        border-radius: 50% 50% 50% 50%;
+        transition: 0.8s;
+    }
+    th#sales-by-hour:hover{
+        background-color: #4B4E75;
+        color: #3498db;
+        border-radius: 100% 100% 100% 100%;
+        transition: 0.8s;
+
+    }
+
+    th.total-hourly-sales::before {
+        transition: 0.8s;
+        z-index: -1;
+        width: 0;
+        height: 180;
+        border-radius: 50% 50% 50% 50%;
+        transition: 0.8s;
+    }
+    th.total-hourly-sales:hover{
+        background-color: #4B4E75;
+        color: #3498db;
+        border-radius: 100% 100% 100% 100%;
+        transition: 0.8s;
+
+    }
+    th.daily-sales::before {
+        transition: 0.8s;
+        z-index: -1;
+        width: 0;
+        height: 180;
+        border-radius: 50% 50% 50% 50%;
+        transition: 0.8s;
+    }
+    th.daily-sales:hover{
+        background-color: #4B4E75;
+        color: #3498db;
+        border-radius: 100% 100% 100% 100%;
+        transition: 0.8s;
+
+    }
+
+    th#total-sales-per-day::before {
+        transition: 0.8s;
+        z-index: -1;
+        width: 0;
+        height: 180;
+        border-radius: 50% 50% 50% 50%;
+        transition: 0.8s;
+    }
+    th#total-sales-per-day:hover{
+        background-color: #4B4E75;
+        color: #3498db;
+        border-radius: 100% 100% 100% 100%;
+        transition: 0.8s;
+
+    }
+    h1::before {
+        transition: 0.8s;
+        z-index: -1;
+        width: 0;
+        height: 180;
+        border-radius: 50% 50% 50% 50%;
+        transition: 0.8s;
+    }
+    h1:hover{
+        background-color: #4B4E75;        
+        color: #3498db;
+        border-radius: 0%;
+        transition: 0.8s;
+        border-color: #3498db;
+
+    }
+
+    legend{
+font-size: 110%;
+    }
+
+    legend::before{
+        transition: 0.8s;
+        z-index: -1;
+        width: 0;
+        height: 180;
+        /* border-radius: 50% 50% 50% 50%; */
+        transition: 0.8s;
+    }
+
+    legend:hover{
+        background-color: #4B4E75;
+        color: #3498db;
+        /* border-radius: 100% 100% 100% 100%; */
+        transition: 0.8s;
+        border: 2px solid #3498db;
+border: double;
+    }
