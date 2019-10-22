@@ -66,7 +66,7 @@ body{
 }
 #salmonpic:hover{
 transform: scale(1.2);
-padding-top: 10px;
+padding-top: 30px;
 }
 
   .total-cookies-label{
@@ -166,15 +166,12 @@ display: block;
           color: #3498db;
           font-family: cursive;
           font-size: 110%;
+          transition: 0.8s;
+
       }
 
     label:hover{
-        /* background-color: #4B4E75; */
         color: #4B4E75;
-        font-weight: bold;
-        /* border-radius: 100% 100% 100% 100%; */
-        transition: 0.8s;
-        /* border: 2px solid #3498db; */
 
     }
   
@@ -197,6 +194,7 @@ display: block;
         border: 3px solid #4B4E75;
 
     }
+   
 
     input{
         border: outset;
